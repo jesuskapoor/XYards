@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Grid Copy</title>
+       
+        <script src="https://use.fontawesome.com/eacc658850.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="gridCopy.css">
+</head>
+
+<body>
+    <div id="navBar" style="display:none;">
+        <ul class="ulBig">
+            <li><a href="" data-text="Home">Home</a></li>
+            <li><a href="" data-text="About">About</a></li>
+            <li><a href="" data-text="References">References</a></li>
+            <li><a href="" data-text="Services">Services</a></li>
+            <li><a href="" data-text="Team">Team</a></li>
+            <li><a href="" data-text="Contact">Contact</a></li>
+        </ul>
+        </div>
+
+    <header>
+        <div class="title">
+        <h1><span style="color:#f44336;">x</span>Yards</h1>
+        <p>Marketplace for all marketplaces</p>
+        </div>
+        <div class="navig">
+            <button id="hamburgerButton" onclick="disappear()">
+                <span class="hamMenu"></span>
+                <span class="hamMenu"></span>
+                <span class="hamMenu"></span>
+                </button>
+        </div>
+    </header>
+    <div id="wrapper">
+        <div class="grid01">
+           <h1> OUR SERVICES</h1>
+        </div>
+        <div class="grid02 Box">
+            <img src="Airbnb-01.svg"/>
+            <div class="paraDiv">Access Unique homes,<br/> experiences and places<br/> around the world</div>
+        </div>
+        <div class="grid03 Box">
+            <img src="law-coaching.png" />
+            <div class="paraDiv">Lorem Ipsum Dipsum</div>
+        </div>
+        <div class="grid04 Box">
+            <img src="Netflix-01.svg"/>
+            <div class="paraDiv">Watch Netflix movies<br/> & TV shows online </div>
+        </div>
+        
+        <div class="grid05 Box">
+            <img src="BlueHost-01.svg"/>
+            <div class="paraDiv">Get secure and reliable<br/> hosting services today</div>
+        </div>
+        <div class="grid06 Box">
+            <img src="Salesforce-01.svg"/>
+            <div class="paraDiv">No.1 CRM platform that <br/>provides customer relationship<br/> management service</div>
+        </div>
+        <div class="grid07 Box">
+            <div class="gri07-extra">
+            <img src="Apple-Music-01.svg"/>
+            <div class="paraDiv"> A music and video <br/>streaming service developed<br/> by Apple Inc.</div>
+            </div>
+        </div>
+        <div class="grid08 Box">
+            <img src="Slack-01.svg"/>
+            <div class="paraDiv"> Get chat rooms organized<br/> by topic, private groups,<br/> and direct messaging</div>
+        </div>
+        <div class="grid09 Box">
+            <img src="HubSpot-01.svg"/>
+            <div class="paraDiv"> a full platform of <br/>marketing, sales, customer service,<br/> and CRM software </div>
+        </div>
+        <div class="grid10 Box">
+            <img src="Kayak-01.svg"/>
+            <div class="paraDiv">a travel agency and<br/> metasearch engine owned <br/>and operated by Booking Holdings</div>
+        </div>
+        <div class="grid11 Box">
+            <img src="Stockland-01.svg"/>
+            <div class="paraDiv">a diversified Australian property<br/> development company.business in <br/>shopping centres, housing estates,<br/> industrial estates</div>
+
+        </div>
+       <!---- <div class="grid10 Box"><img src="" />
+            <img src="Tumblr-01.svg"/>
+        </div>
+        <div class="grid11 Box">
+            <i class="fa fa-youtube" aria-hidden="true"></i>  
+        </div> -->
+    </div>
+
+    <script>
+        let ham = document.querySelector('#hamburgerButton');
+        let body =  document.querySelector('body');  
+        let nav =  document.querySelector('#navBar'); 
+        let UlBig =  document.querySelector('.ulBig'); 
+        let BigBox = document.querySelectorAll('.Box');
+        let BigBoxImg = document.querySelectorAll('.Box>img');
+
+
+
+        function disappear(){
+            if(nav.style.display=="none"){
+            nav.style.display = "flex";
+            body.style.overflowY = "hidden";
+            ham.removeAttribute("id");
+            ham.setAttribute("class","makeHam");
+
+            }
+            else{
+            nav.style.display = "none";
+            ham.removeAttribute("class");
+            ham.setAttribute("id" ,"hamburgerButton");
+        }
+        }
+
+    </script>
+</body>
+</html>
